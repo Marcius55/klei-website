@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Klei</title>
+  <!-- Palette matches src/styles/tokens.css. -->
+  <rect width="64" height="64" rx="16" fill="#f6f0e8"/>
+  <path d="M15 13h8v24l12-13h10L31 39l15 16H35L23 41v14h-8z" fill="#1f1a17"/>
+  <circle cx="51" cy="51" r="5" fill="#ae512c"/>
+</svg>

@@ -26,6 +26,7 @@ button {
 
 a {
     text-decoration: none;
+    transition: color var(--motion-fast) var(--ease-out);
 }
 
 button {
@@ -66,6 +67,22 @@ button {
     font-family: var(--font-display);
     font-size: var(--text-xl);
     font-weight: 600;
+}
+
+.logo span {
+    transition: color var(--motion-fast) var(--ease-out);
+}
+
+.logo:hover {
+    color: var(--color-ink-muted);
+}
+
+.footer-brand .logo:hover {
+    color: var(--color-sand);
+}
+
+.logo:hover span {
+    color: var(--color-clay-dark);
 }
 
 .logo span,
@@ -120,7 +137,6 @@ h1 em {
 .site-nav__link:focus-visible,
 .button:focus-visible,
 .faq-question:focus-visible,
-.newsletter-form input:focus-visible,
 .site-footer a:focus-visible {
     outline: var(--space-1) solid var(--color-ink);
     outline-offset: var(--space-1);
@@ -169,6 +185,12 @@ h1 em {
 
 .site-nav__link:hover {
     color: var(--color-clay);
+    
+}
+
+.site-nav__link[aria-current="page"],
+.site-nav__link[aria-current="page"]:hover {
+    color: var(--color-ink);
 }
 
 .site-nav__link + .site-nav__link {
@@ -375,11 +397,13 @@ h1 em {
     border-radius: var(--radius-md);
     display: grid;
     overflow: hidden;
-    transition: border-color var(--motion-fast) var(--ease-standard);
+    transition: border-color var(--motion-fast) var(--ease-out), transform var(--motion-fast) var(--ease-out), box-shadow var(--motion-fast) var(--ease-out);
 }
 
 .workshop-card:hover {
     border-color: var(--color-clay);
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(calc(var(--space-1) * -1));
 }
 
 .workshop-card__image {
@@ -651,7 +675,7 @@ h1 em {
     grid-area: icon;
     inline-size: calc(var(--space-3) - var(--space-1));
     justify-self: center;
-    transition: transform var(--motion-fast) var(--ease-standard);
+    transition: transform var(--motion-medium) var(--ease-out);
 }
 
 .faq-icon::after {
@@ -663,13 +687,16 @@ h1 em {
 }
 
 .faq-answer {
-    animation: faq-reveal var(--motion-medium) var(--ease-standard);
     color: var(--color-ink-muted);
     display: grid;
     grid-template-rows: 1fr;
     max-inline-size: 64ch;
     overflow: hidden;
     padding-block-end: var(--space-4);
+}
+
+.faq-answer.is-opening {
+    animation: faq-reveal var(--motion-medium) var(--ease-out);
 }
 
 .faq-answer > p {
@@ -714,6 +741,10 @@ h1 em {
     gap: var(--space-2);
 }
 
+.newsletter-inner {
+    gap: var(--space-4);
+}
+
 .newsletter h2 {
     font-family: var(--font-display);
     font-size: var(--text-2xl);
@@ -737,6 +768,19 @@ h1 em {
     display: flex;
     gap: var(--space-2);
     padding: var(--space-2);
+}
+
+.newsletter-field:has(input:focus-visible) {
+    outline: var(--border-thin) solid var(--color-ink);
+    outline-offset: calc(var(--border-thin) * -1);
+}
+
+.newsletter-field:has(input[aria-invalid="true"]) {
+    box-shadow: inset 0 0 0 var(--border-thin) var(--color-ink);
+}
+
+.newsletter-form input:focus-visible {
+    outline: none;
 }
 
 .newsletter-form input {
@@ -909,7 +953,7 @@ h1 em {
     }
 
     .site-nav__link[aria-current="page"]:hover {
-        color: var(--color-clay);
+        color: var(--color-ink);
     }
 
     .site-nav__cta {
@@ -995,10 +1039,13 @@ h1 em {
     }
 
     .site-nav,
+    a,
+    .logo span,
     .site-nav__link,
     .button,
     .workshop-card,
-    .faq-answer {
+    .faq-answer,
+    .faq-answer.is-opening {
         animation: none;
         transition: none;
     }
@@ -1006,6 +1053,10 @@ h1 em {
     .faq-icon::before,
     .faq-icon::after {
         transition: none;
+    }
+
+    .workshop-card:hover {
+        transform: none;
     }
 
 }

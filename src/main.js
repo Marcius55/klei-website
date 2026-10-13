@@ -81,6 +81,7 @@ const faqButtons = [...document.querySelectorAll('.faq-question')];
 
 const setFaqState = (button, isOpen) => {
     const answer = document.querySelector(`#${button.getAttribute('aria-controls')}`);
+    answer.classList.toggle('is-opening', isOpen && button.getAttribute('aria-expanded') !== 'true');
     button.setAttribute('aria-expanded', String(isOpen));
     answer.hidden = !isOpen;
 };
@@ -99,10 +100,13 @@ const newsletterForm = document.querySelector('.newsletter-form');
 const newsletterEmail = document.querySelector('#newsletter-email');
 const newsletterStatus = document.querySelector('#newsletter-status');
 
+const isValidNewsletterEmail = () => newsletterEmail.validity.valid
+    && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(newsletterEmail.value.trim());
+
 newsletterForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    if (!newsletterEmail.validity.valid) {
+    if (!isValidNewsletterEmail()) {
         newsletterEmail.setAttribute('aria-invalid', 'true');
         newsletterStatus.textContent = 'Enter a valid email address, like you@example.com';
         newsletterEmail.focus();
@@ -110,12 +114,12 @@ newsletterForm.addEventListener('submit', (event) => {
     }
 
     newsletterEmail.removeAttribute('aria-invalid');
-    newsletterStatus.textContent = 'Thanks — you are on the list for new workshop dates.';
+    newsletterStatus.textContent = 'Your email format is valid. Online signup is not connected yet.';
     newsletterForm.reset();
 });
 
 newsletterEmail.addEventListener('input', () => {
-    if (newsletterEmail.validity.valid) {
+    if (isValidNewsletterEmail()) {
         newsletterEmail.removeAttribute('aria-invalid');
         newsletterStatus.textContent = '';
     }
