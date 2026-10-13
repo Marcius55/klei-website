@@ -316,9 +316,31 @@
 
             <div class="footer-bottom">
                 <span>© 2026 Klei</span>
-                <span><a id="privacy" href="#privacy">Privacy</a> · <a id="terms" href="#terms">Terms</a></span>
+                <span class="footer-settings"><button class="footer-setting" id="privacy" type="button" data-privacy-open>Privacy</button><button class="footer-setting" type="button" data-cookie-settings>Cookie settings</button><a id="terms" href="#terms">Terms</a></span>
             </div>
         </div>
     </footer>
+
+    <section class="cookie-banner" aria-labelledby="cookie-title" hidden>
+        <div class="cookie-copy">
+            <h2 id="cookie-title">Your privacy, your choice.</h2>
+            <p>We use Google Analytics to understand how visitors use our website. Analytics only runs if you accept.</p>
+            <button class="cookie-details-link" type="button" data-privacy-open>Read privacy details</button>
+        </div>
+        <div class="cookie-actions">
+            <button class="button button--secondary" type="button" data-consent="granted">Accept analytics</button>
+            <button class="button button--secondary" type="button" data-consent="denied">Reject analytics</button>
+        </div>
+    </section>
+
+    <dialog class="privacy-dialog" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Analytics and your privacy</h2>
+        <p>If you accept, Google Analytics 4 collects website usage information, such as page views and browser/device information, and can store analytics cookies. We keep advertising consent denied.</p>
+        <p>If you reject, we do not load Google Analytics. Your choice is saved in this browser for 180 days. If browser storage is unavailable, the choice cannot be remembered.</p>
+        <p>You can change your choice through Cookie settings in the footer. Withdrawing consent disables Analytics and clears its cookies on this website.</p>
+        <p>The newsletter form currently validates email format only; it does not send or store your address.</p>
+        <button class="button button--secondary" type="button" data-privacy-close>Close privacy details</button>
+    </dialog>
+    <p class="visually-hidden" id="cookie-status" aria-live="polite"></p>
 </body>
 </html>

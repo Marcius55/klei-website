@@ -1,3 +1,5 @@
+import './analytics.js';
+
 const menu = document.querySelector('#primary-navigation');
 const openButton = document.querySelector('.menu-toggle');
 const closeButton = document.querySelector('.menu-close');

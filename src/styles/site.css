@@ -887,6 +887,104 @@ h1 em {
     text-decoration: none;
 }
 
+.footer-bottom {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.footer-settings,
+.cookie-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.footer-setting,
+.cookie-details-link {
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    min-block-size: calc(var(--space-5) + var(--space-1));
+    padding: 0;
+    text-decoration: underline;
+    transition: color var(--motion-fast) var(--ease-out);
+}
+
+.footer-setting:hover {
+    color: var(--color-white);
+}
+
+.cookie-details-link:hover {
+    color: var(--color-clay-dark);
+}
+
+.footer-setting:focus-visible,
+.cookie-details-link:focus-visible {
+    outline: var(--border-thin) solid currentColor;
+    outline-offset: var(--space-1);
+}
+
+.cookie-banner {
+    background: var(--color-cream);
+    border: var(--border-thin) solid var(--color-sand);
+    border-radius: var(--radius-md);
+    bottom: var(--space-3);
+    box-shadow: var(--shadow-card-hover);
+    color: var(--color-ink);
+    display: grid;
+    gap: var(--space-3);
+    inset-inline: var(--space-3);
+    margin-inline: auto;
+    max-block-size: calc(100dvh - var(--space-5));
+    max-inline-size: var(--container);
+    overflow-y: auto;
+    padding: var(--space-4);
+    position: fixed;
+    z-index: 2;
+}
+
+.cookie-banner[hidden] {
+    display: none;
+}
+
+.cookie-copy h2,
+.privacy-dialog h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    margin: 0;
+}
+
+.cookie-copy p,
+.privacy-dialog p {
+    font-size: var(--text-sm);
+    margin-block: var(--space-3);
+}
+
+.cookie-actions .button {
+    background: var(--color-cream);
+    flex: 1 1 auto;
+}
+
+.cookie-actions .button:hover {
+    background: var(--color-ink);
+    color: var(--color-cream);
+}
+
+.privacy-dialog {
+    background: var(--color-cream);
+    border: var(--border-thin) solid var(--color-sand);
+    border-radius: var(--radius-md);
+    color: var(--color-ink);
+    inline-size: min(calc(100% - var(--space-5)), var(--container));
+    max-block-size: calc(100dvh - var(--space-5));
+    padding: var(--space-4);
+}
+
+.privacy-dialog::backdrop {
+    background: color-mix(in srgb, var(--color-ink) 40%, transparent);
+}
+
 @media (min-width: 768px) {
     h1 {
         font-weight: 600;
@@ -1018,6 +1116,11 @@ h1 em {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
+    .cookie-banner {
+        align-items: center;
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
     .footer-bottom {
         grid-column: 1 / -1;
     }
@@ -1041,6 +1144,8 @@ h1 em {
     .site-nav,
     a,
     .logo span,
+    .footer-setting,
+    .cookie-details-link,
     .site-nav__link,
     .button,
     .workshop-card,
