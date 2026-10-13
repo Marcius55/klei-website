@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" role="img" aria-labelledby="t"><title id="t">Shelves full of drying pots in the studio</title>
+<rect width="600" height="480" fill="#E9DCCA"/>
+<g fill="#1F1A17" opacity=".85"><rect x="40" y="150" width="520" height="10"/><rect x="40" y="290" width="520" height="10"/><rect x="40" y="430" width="520" height="10"/></g>
+<g fill="#ae512c"><path d="M80 150v-50c0-14 10-24 24-24s24 10 24 24v50z"/><rect x="300" y="100" width="60" height="50" rx="6"/><path d="M190 290c-30 0-40-30-30-60h60c10 30 0 60-30 60z"/><rect x="470" y="380" width="50" height="50" rx="25"/></g>
+<g fill="#5f6e4e"><ellipse cx="220" cy="130" rx="40" ry="20"/><path d="M420 290v-70h50v70z"/><path d="M90 430c0-40 20-60 40-60s40 20 40 60z"/></g>
+<g fill="#F6F0E8"><rect x="430" y="96" width="40" height="54" rx="8"/><path d="M290 290l10-60h60l10 60z"/><ellipse cx="300" cy="410" rx="56" ry="20"/></g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" role="img" aria-labelledby="t"><title id="t">Three handmade pots on a terracotta arch</title>
+<path d="M60 560V260a220 220 0 0 1 440 0v300z" fill="#ae512c"/>
+<circle cx="420" cy="120" r="34" fill="#F6F0E8" opacity=".9"/>
+<ellipse cx="280" cy="500" rx="230" ry="18" fill="#1F1A17" opacity=".12"/>
+<path d="M150 300c-6 0-10 6-8 12 4 14 8 22 4 40-10 40-46 70-46 110 0 26 20 40 50 40s50-14 50-40c0-40-36-70-46-110-4-18 0-26 4-40 2-6-2-12-8-12z" fill="#E9DCCA"/>
+<path d="M120 420c20 8 40 8 60 0" stroke="#5f6e4e" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M230 360h120c4 0 8 4 7 8l-12 112c-2 12-12 20-24 20h-62c-12 0-22-8-24-20l-12-112c-1-4 3-8 7-8z" fill="#1F1A17"/>
+<path d="M236 400h108" stroke="#ae512c" stroke-width="6" stroke-linecap="round"/>
+<path d="M380 430c0-30 26-50 60-50s60 20 60 50c0 40-26 70-60 70s-60-30-60-70z" fill="#5f6e4e"/>
+<path d="M392 420h96" stroke="#F6F0E8" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+</svg>

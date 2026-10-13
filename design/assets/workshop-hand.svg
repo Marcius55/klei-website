@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-labelledby="t"><title id="t">A hand-built coil vase and a jug</title>
+<rect width="400" height="280" fill="#1F1A17"/>
+<g fill="#ae512c"><rect x="110" y="190" width="90" height="16" rx="8"/><rect x="104" y="172" width="102" height="16" rx="8"/><rect x="100" y="154" width="110" height="16" rx="8"/><rect x="104" y="136" width="102" height="16" rx="8"/><rect x="112" y="118" width="86" height="16" rx="8"/><rect x="122" y="100" width="66" height="16" rx="8"/></g>
+<path d="M250 110h60l-6 20c16 10 22 30 22 50 0 20-14 30-46 30s-46-10-46-30c0-20 6-40 22-50z" fill="#E9DCCA"/>
+<path d="M322 140c22 0 26 34 4 40" stroke="#E9DCCA" stroke-width="8" fill="none"/>
+</svg>
