@@ -706,6 +706,8 @@ h1 em {
 .newsletter-form {
     display: grid;
     gap: var(--space-3);
+    grid-template-columns: minmax(0, 1fr);
+    min-inline-size: 0;
 }
 
 .newsletter-copy {
