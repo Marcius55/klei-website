@@ -1,4 +1,4 @@
-import './analytics.js';
+import './privacy.js';
 
 const menu = document.querySelector('#primary-navigation');
 const openButton = document.querySelector('.menu-toggle');
