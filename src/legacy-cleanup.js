@@ -18,14 +18,3 @@ document.cookie.split(';').forEach(cookie => {
         document.cookie = `${expiry}; Domain=.${domain}`;
     });
 });
-
-const privacy = document.querySelector('.privacy-dialog');
-let opener;
-document.querySelectorAll('[data-privacy-open]').forEach(button => {
-    button.addEventListener('click', () => {
-        opener = button;
-        privacy.showModal();
-    });
-});
-document.querySelector('[data-privacy-close]').addEventListener('click', () => privacy.close());
-privacy.addEventListener('close', () => opener?.focus({preventScroll: true}));

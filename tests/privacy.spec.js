@@ -19,11 +19,9 @@ test('Analytics stays removed even for previously consenting visitors', async ({
     const cookies = await context.cookies();
     expect(cookies.filter(cookie => cookie.name.startsWith('_ga'))).toEqual([]);
     expect(cookies.some(cookie => cookie.name === 'unrelated-preference')).toBe(true);
-    const privacyButton = page.getByRole('button', {name: 'Privacy', exact: true});
-    await privacyButton.click();
-    await expect(page.getByRole('dialog')).toContainText('Google Analytics has been removed');
-    await page.getByRole('dialog').press('Escape');
-    await expect(privacyButton).toBeFocused();
+    await expect(page.getByRole('button', {name: 'Privacy', exact: true})).toHaveCount(0);
+    await expect(page.locator('.privacy-dialog')).toHaveCount(0);
+    await expect(page.locator('meta[property^="og:"], meta[name^="twitter:"]')).toHaveCount(0);
     await page.reload();
     expect(trackingRequests).toEqual([]);
 });

@@ -1,4 +1,4 @@
-import './privacy.js';
+import './legacy-cleanup.js';
 
 const menu = document.querySelector('#primary-navigation');
 const openButton = document.querySelector('.menu-toggle');

@@ -892,57 +892,6 @@ h1 em {
     gap: var(--space-3);
 }
 
-.footer-settings {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-}
-
-.footer-setting {
-    background: transparent;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    min-block-size: calc(var(--space-5) + var(--space-1));
-    padding: 0;
-    text-decoration: underline;
-    transition: color var(--motion-fast) var(--ease-out);
-}
-
-.footer-setting:hover {
-    color: var(--color-white);
-}
-
-.footer-setting:focus-visible {
-    outline: var(--border-thin) solid currentColor;
-    outline-offset: var(--space-1);
-}
-
-.privacy-dialog h2 {
-    font-family: var(--font-display);
-    font-size: var(--text-xl);
-    margin: 0;
-}
-
-.privacy-dialog p {
-    font-size: var(--text-sm);
-    margin-block: var(--space-3);
-}
-
-.privacy-dialog {
-    background: var(--color-cream);
-    border: var(--border-thin) solid var(--color-sand);
-    border-radius: var(--radius-md);
-    color: var(--color-ink);
-    inline-size: min(calc(100% - var(--space-5)), var(--container));
-    max-block-size: calc(100dvh - var(--space-5));
-    padding: var(--space-4);
-}
-
-.privacy-dialog::backdrop {
-    background: color-mix(in srgb, var(--color-ink) 40%, transparent);
-}
-
 @media (min-width: 768px) {
     h1 {
         font-weight: 600;
@@ -1097,7 +1046,6 @@ h1 em {
     .site-nav,
     a,
     .logo span,
-    .footer-setting,
     .site-nav__link,
     .button,
     .workshop-card,
