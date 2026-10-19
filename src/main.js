@@ -1,4 +1,4 @@
-import './legacy-cleanup.js';
+import './analytics.js';
 
 const menu = document.querySelector('#primary-navigation');
 const openButton = document.querySelector('.menu-toggle');
