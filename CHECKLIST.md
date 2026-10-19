@@ -52,31 +52,13 @@ Under every category: a prompt to let Codex audit it first. It reports, you deci
 
 > *Ask Codex:* Run a performance audit: what blocks rendering, what shifts the layout, what is loaded but not used? Report first.
 
-### Lighthouse evidence — 20 October 2026
+### Lighthouse screenshots
 
-Live URL tested: [klei-website.vercel.app](https://klei-website.vercel.app/#studio).
+![Lighthouse Performance 99](https://raw.githubusercontent.com/Marcius55/klei-website/main/docs/evidence/lighthouse-99-2026-10-20.png)
 
-These are my supplied Lighthouse screenshots. The first two meet the performance target; the earlier result is kept as a record of the issue. Scores vary between runs. The 768px screenshot identifies its viewport, but the other two do not establish a device width or Lighthouse device profile.
+![Tablet 768px — Lighthouse Performance 91](https://raw.githubusercontent.com/Marcius55/klei-website/main/docs/evidence/lighthouse-tablet-768-91-2026-10-20.png)
 
-| Screenshot | Performance | Accessibility | Best Practices | SEO |
-| --- | --- | --- | --- | --- |
-| Later result, 00:22:43 | 99 | 100 | 100 | 100 |
-| Tablet viewport, 768px, 00:22:00 | 91 | 100 | 100 | 100 |
-| Earlier result, 00:07:13 | 88 | 100 | 100 | 100 |
-
-#### Later Lighthouse result — 99
-
-![Live website and Lighthouse scores: Performance 99, Accessibility 100, Best Practices 100, SEO 100](docs/evidence/lighthouse-99-2026-10-20.png)
-
-#### Tablet viewport — 768px, Performance 91
-
-![Website in a 768px responsive viewport and Lighthouse scores: Performance 91, Accessibility 100, Best Practices 100, SEO 100](docs/evidence/lighthouse-tablet-768-91-2026-10-20.png)
-
-#### Earlier result — 88, below the target
-
-![Earlier Lighthouse scores: Performance 88, Accessibility 100, Best Practices 100, SEO 100](docs/evidence/lighthouse-earlier-88-2026-10-20.png)
-
-These images provide Lighthouse evidence, not proof of every checklist item. Dedicated layout screenshots at 375px and 1440px, a share-preview check and GA4 Realtime evidence still need to be added.
+![Earlier result — Lighthouse Performance 88](https://raw.githubusercontent.com/Marcius55/klei-website/main/docs/evidence/lighthouse-earlier-88-2026-10-20.png)
 
 ## 6. Meta & sharing
 
