@@ -1,5 +1,23 @@
 /* Klei design tokens. The only values you use: colours, fonts, sizes, spacing. */
 
+/* Same Google Fonts, served locally to avoid an external render-blocking stylesheet.
+   These are variable Latin-subset files; redistribution licenses are in public/fonts. */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('/fonts/fraunces-v38-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('/fonts/inter-v20-latin.woff2') format('woff2');
+}
+
 :root {
     /* colour */
     --color-clay: #ae512c;
