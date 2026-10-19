@@ -58,7 +58,7 @@ Under every category: a prompt to let Codex audit it first. It reports, you deci
 
 ![Tablet 768px — Lighthouse Performance 91](https://raw.githubusercontent.com/Marcius55/klei-website/main/docs/evidence/lighthouse-tablet-768-91-2026-10-20.png)
 
-![Earlier result — Lighthouse Performance 88](https://raw.githubusercontent.com/Marcius55/klei-website/main/docs/evidence/lighthouse-earlier-88-2026-10-20.png)
+![Mobile 375px — Lighthouse Performance 96](https://raw.githubusercontent.com/Marcius55/klei-website/main/docs/evidence/lighthouse-mobile-375-96-2026-10-19.png)
 
 ## 6. Meta & sharing
 
